@@ -1,3 +1,4 @@
+
 function rectangles = treemap(data,w,h)
     %TREEMAP   Partition a rectangular area.
     %   rectangles = treemap(data,w,h) partitions the rectangle [0,0,w,h]
