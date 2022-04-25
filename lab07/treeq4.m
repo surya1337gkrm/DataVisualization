@@ -1,0 +1,13 @@
+close all;
+clear all;
+clc;
+data = {{'Aircraft including'},5200  ; {'Large', 'automobiles'},1610  ; 'Soya beans', 1600  ; {'Large', 'spark-ignition'}, 1200  ; {'Small','automobiles'}, 1120  ; {'Motor', 'vehicle','body parts'}, 1120  ; {'Mid-sized', 'automobiles'}, 1030  ; 'Motor vehicle', 812  ; {'Tobacco', 'cigarettes'}, 732  ; {'Digital', 'processing units'}, 585 };
+colors = rand(10,3);
+%colors = rand(10,3);
+% n = length(data);
+% colors = (jet(n)+1)/2;
+% %colors = rand(10,3);
+rectangles = treemap([data{:,2}]);
+labels = data(:,1);
+plotRectangles(rectangles,labels,colors);
+outline(rectangles);

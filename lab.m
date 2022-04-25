@@ -1,2 +1,2 @@
-load fisheriris
-meas
+load fisheriris;
+meas;

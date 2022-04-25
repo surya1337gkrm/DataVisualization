@@ -23,3 +23,12 @@ set(gca,'XTick',xbounds(1):xbounds(2),'FontSize',8);
 xticklabels(xLabels);
 xtickangle(60);
 legend('carSales','lightTruckSales','total',Location='best'); 
+
+
+
+data = zeros(length(CarSales),2);
+for i=1:length(CarSales)
+        data(i,1)=(CarSales(i)/Total(i))*100;
+        data(i,2) = (LightTruckSales(i)/Total(i))*100;
+end
+bar(data,'stacked');

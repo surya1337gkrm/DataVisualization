@@ -1,7 +1,7 @@
 close all;
 clear;
 clc;
-npoints=150;
+npoints=10;
 ndims=4;
 data=zeros(ndims,npoints);
 
@@ -9,7 +9,8 @@ for i=1:npoints
     for j=1:ndims
         data(j,i)=randn;
     end
-end   
+end
+
 hold on;
 for i=1:npoints
     

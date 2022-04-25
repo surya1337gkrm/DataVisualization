@@ -12,9 +12,11 @@ data={'Alaska',571951;
     'Colorado',103718;
     'Oregon',95997};
     
-colors=rand(10,3);
+colors=rand(9,3);
+disp(colors)
 rectangles=treemap([data{:,2}]);
 labels=data(:,1);
+
 plotRectangles(rectangles,labels,colors);
 outline(rectangles);
 title('The 9 Biggest U.S states')
