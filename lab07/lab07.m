@@ -13,4 +13,5 @@ end
 
 rectangles=treemap(data);
 plotRectangles(rectangles,labels,colors);
+outline(rectangles);
 

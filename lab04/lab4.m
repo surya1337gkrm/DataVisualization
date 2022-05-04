@@ -23,7 +23,7 @@ hold on;
 plot(Recall_AIM,Precision_AIM,LineWidth=2);
 plot(Recall_GB, Precision_GB,'--',LineWidth=2);
 plot(Recall_GC, Precision_GC,'*',LineWidth=2);
-plot(Recall_GU, Precision_GU,'--pr',LineWidth=2);
+plot(Recall_GU, Precision_GU,'--r',LineWidth=2);
 plot(Recall_HC, Precision_HC,':',LineWidth=2);
 plot(Recall_IG, Precision_IG,LineWidth=2);
 xlabel('Recall');
