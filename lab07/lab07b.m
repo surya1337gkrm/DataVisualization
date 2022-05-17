@@ -13,7 +13,7 @@ data={'Alaska',571951;
     'Oregon',95997};
     
 colors=rand(9,3);
-disp(colors)
+% disp(colors)
 rectangles=treemap([data{:,2}]);
 labels=data(:,1);
 

@@ -9,6 +9,7 @@ ptsymb={'bs','r^','md','go','c+'};
 for i=1:3
   
     clust=find(idx==i);
+    
     plot(meas(clust,1),meas(clust,2),ptsymb{i});
     hold on;
 end
